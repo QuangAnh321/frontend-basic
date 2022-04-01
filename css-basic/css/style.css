@@ -1,0 +1,30 @@
+/* Select all elements */
+* {
+    text-decoration-line: line-through;
+    background-color: aliceblue;
+}
+
+/* Select all element p*/
+p {
+    color: green;
+}
+
+/* Select by id */
+#idSelector {
+    color: aqua;
+}
+
+/* Select by class */
+.title {
+    text-align: center;
+    color: red;
+}
+
+/* Grouped element select */
+/* h1, p {
+    text-shadow: 2px 2px;
+} */
+
+#withBorder {
+    border: 3px solid tomato;
+}

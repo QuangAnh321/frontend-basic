@@ -1,0 +1,14 @@
+body {
+    /* background-color: aquamarine;
+    opacity: 0.3; */
+
+    background-image: url("../longcoc.jpg");
+    /* background-repeat: repeat-x;
+    background-repeat: repeat-y; */
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;
+
+    /* Short hand syntax */
+    /* background: url("../longcoc.jpg") no-repeat right top; */
+}

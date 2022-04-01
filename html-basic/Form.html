@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <form action="action_handler.php" target="_blank">
+            <h4>Text input</h4>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname"><br><br>
+            <input type="submit" value="Submit">
+        </form>
+        <br><br>
+
+        <form>
+            <h4>Radio button</h4>
+            <input type="radio" id="java" name="fav_lang" value="Java">
+            <label for="java">Java</label><br>
+            <input type="radio" id="scala" name="fav_lang" value="Scala">
+            <label for="scala">Scala</label>
+        </form>
+        <br><br>
+
+        <form>
+            <h4>Checkbox</h4>
+            <input type="checkbox" id="fender" name="guitar_brand" value="Fender">
+            <label for="fender">Fender</label><br>
+            <input type="checkbox" id="gibson" name="guitar_brand" value="Gibson">
+            <label for="gibson">Gibson</label>
+        </form>
+
+        <form>
+            <h4>Dropdown</h4>
+            <label for="cars">Pick you favorite car:</label>
+            <select id="cars" name="cars">
+                <option value="Toyota">Toyota</option>
+                <option value="Hyundai" selected>Hyundai</option>
+                <option value="Ford">Ford</option>
+            </select>
+            <br>
+            <label for="laptop">Pick you favorite laptop(s):</label>
+            <select id="laptop" name="laptop" size="3" multiple>
+                <option value="Macbook">Macbook</option>
+                <option value="DellXPS" selected>Dell XPS</option>
+                <option value="LenovoLegion">Lenovo Legion</option>
+                <option value="AsusROGStrix">Asus Rog Strix</option>
+            </select>
+            <p>Hold ctrl to select multiple items</p>
+        </form>
+
+        <form>
+            <h4>Text area</h4>
+            <textarea name="message" row="20" cols="40">Anything you want to share with us ?</textarea>
+            <button type="button" onclick="alert('Hello world!')">Click here!</button>
+        </form>
+
+        <form>
+            <fieldset>
+                <legend>Personal information</legend>
+                <label for="fname">Your name</label><br>
+                <input type="text" id="fname" name="fname"><br>
+                <label for="faddress">Your Address</label><br>
+                <input type="text" id="faddress" name="faddress"><br><br>
+                <input type="submit" value="Submit">
+
+                <p>A list of predefined options for input element</p>
+                <input list="browsers">
+                <datalist id="browsers">
+                    <option value="Edge"></option>
+                    <option value="Chrome"></option>
+                    <option value="Firefox"></option>
+                </datalist>
+            </fieldset>
+        </form>
+
+        <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+            <input type="range" id="a" name="a" value="50">
+            100 +
+            <input type="number" id="b" name="b" value="50">
+            =
+            <output name="x" for="a b"></output>
+        </form>
+
+        <form>
+            <label for="fname">Read only name: </label>
+            <input type="text" id="fname" name="name" value="John Doe" readonly><br>
+            <p>The above text will be submit with the form</p>
+            <label for="faddress">Disabled address:</label>
+            <input type="text" id="faddress" name="address" value="Hanoi" disabled><br>
+            <p>The above text field is unusable, unclickable and will not be submitted with the form</p>
+        </form>
+    </body>
+</html>

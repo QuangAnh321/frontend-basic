@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Some table</title>
+    </head>
+    <style>
+        table, td, th {
+            border: 1px solid black;
+            border-collapse: collapse;
+            /* border-radius: 10px; */
+        }
+        td {
+            padding: 20px;
+            background-color: antiquewhite;
+        }
+        tr {
+            background-color: cyan;
+        }
+        th {
+            text-align: left;
+            padding: 20px;
+        }
+        table {
+            width: 100%;
+        }
+    </style>
+    <body>
+        <table>
+            <tr>
+                <th>Company</th>
+                <th style="width: 30%;">Contact</th>
+                <th>Country</th>
+            </tr>
+            <tr>
+                <td>FPT</td>
+                <td>Nguyen Van A</td>
+                <td>Vietnam</td>
+            </tr>
+            <tr style="height: 200px;">
+                <td>Flinters</td>
+                <td>Sato Kenji</td>
+                <td>Japan</td>
+            </tr>
+        </table>
+        <table>
+            <caption>Famous guitar models</caption>
+            <tr>
+                <th colspan="2">Guitar model</th>
+                <th>Year</th>
+            </tr>
+            <tr>
+                <td>Fender</td>
+                <td>Stratocaster</td>
+                <td>1954</td>
+            </tr>
+            <tr>
+                <td>Gibson</td>
+                <td>Les Paul</td>
+                <td>1952</td>
+            </tr>
+            <tr>
+                <td>PRS</td>
+                <td>Custom 24</td>
+                <td>1985</td>
+            </tr>
+        </table>
+        <table>
+            <caption>Famous Camera models</caption>
+            <tr>
+                <th>Camera brand</th>
+                <td>Canon</td>
+            </tr>
+            <tr>
+                <th rowspan="2">Model</td>
+                <td>5D</td>
+            </tr>
+            <tr>
+                <td>1D</td>
+            </tr>
+        </table>
+    </body>
+</html>

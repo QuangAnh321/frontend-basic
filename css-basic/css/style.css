@@ -28,3 +28,23 @@ p {
 #withBorder {
     border: 3px solid tomato;
 }
+
+#dashedBorder {
+    border-width: 10px;
+    border-style: dashed;
+    border-color: blue;
+}
+
+#dottedBorder {
+    border-width: 40px;
+    border-top-style: dotted;
+    border-left-style: solid;
+    border-color: violet;
+}
+
+#specificWidth {
+    border-width: 10px 100px 30px 70px;
+    border-style: solid;
+    border-color: tomato aqua;
+    border-radius: 5px;
+}
